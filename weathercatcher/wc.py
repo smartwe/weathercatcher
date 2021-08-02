@@ -4,6 +4,11 @@ import time
 
 #html = requests.get(f"https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query={locations}+%EB%82%A0%EC%94%A8")
 #soup = bs(html.content, 'html.parser')
+def current_temp_img(locations):
+    html = requests.get(f"https://www.google.com/search?q={locations}+%EB%82%A0%EC%94%A8")
+    soup = bs(html.content, 'html.parser')
+    url = soup.select_one("#wob_tci")
+    url.lstrip("")
 def prt_temp(month, day, locations):
     html = requests.get(f"https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query={month}월+{day}일+{locations}+%EB%82%A0%EC%94%A8")
     soup = bs(html.content, 'html.parser')
@@ -50,4 +55,3 @@ def current_ozoneindex(locations):
     data2 = data1.findAll('dd')
     find_ozone = data2[2].find('span', {'class':'num'}).text
     return find_ozone
-print(current_details('서울'))
