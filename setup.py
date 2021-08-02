@@ -10,7 +10,7 @@ author='smartwe',
 
 author_email='sparklingwee@naver.com',
 
-url='https://smartwe.kr',
+url='https://github.com/smartwe/weathercatcher',
 
 license='MIT', # MIT에서 정한 표준 라이센스 따른다
 
