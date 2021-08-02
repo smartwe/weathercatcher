@@ -1,3 +1,7 @@
-*/weathercatcher.egg-info
-*/dist
-*/build
+/weathercatcher.egg-info
+/dist
+/build
+/lib
+setup.bat
+setup.py
+test.py
