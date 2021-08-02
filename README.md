@@ -1,4 +1,6 @@
 :wave:
+
+
 prt_temp(month, day, locations) 특정날의 온도를 가져옴
 
 
