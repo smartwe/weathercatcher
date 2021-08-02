@@ -5,3 +5,4 @@
 setup.bat
 setup.py
 test.py
+/weathercatcher/__pycache__
